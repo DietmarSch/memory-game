@@ -1,0 +1,117 @@
+body{
+    background-color: blue;
+    height:95vh;
+    width:95vh;
+}
+#playGround{
+    height:99%;
+    width:99%;
+    border:1px solid white;
+}
+#gameBoard{
+    height:99%;
+    width:99%;
+    border:1px solid red;
+}
+
+.raw{
+    height:19.5%;
+    width:99%;
+    border:1px solid yellow;
+    position:relative;
+  
+}
+
+.outerBox{
+
+height:90%;
+width:19.5%;
+border:1px solid black;
+border-radius:10px;
+display: inline-block;
+position:relative;
+background-color: transparent;
+perspective: 1000px;
+}
+
+
+
+.innerBox{
+    height:100%;
+    width:100%;
+    border: 1px solid pink;
+    border-radius:10px;
+    
+    position:absolute;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+}
+
+.cardFront, .cardBack{
+    height:100%;
+    width:100%;
+    backface-visibility: hidden;
+    border:1px solid lightgreen;
+    border-radius:10px;
+    position: absolute;
+    
+}
+
+.cardFront{
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.cardBack{
+    background-color: brown;
+    
+}
+
+.uncovered .innerBox{
+    transform: rotateY(180deg);
+}
+
+
+.img1{
+    background-image: url('imgs/1.gif');
+}
+.img2{
+    background-image: url('imgs/2.gif');
+}
+.img3{
+    background-image: url('imgs/3.gif');
+}
+.img4{
+    background-image: url('imgs/4.gif');
+}
+.img5{
+    background-image: url('imgs/5.gif');
+}
+.img6{
+    background-image: url('imgs/6.gif');
+}
+.img7{
+    background-image: url('imgs/7.gif');
+}
+.img8{
+    background-image: url('imgs/8.gif');
+}
+.img9{
+    background-image: url('imgs/9.gif');
+}
+.img10{
+    background-image: url('imgs/10.gif');
+}
+.img11{
+    background-image: url('imgs/11.gif');
+}
+.img12{
+    background-image: url('imgs/12.gif');
+}
